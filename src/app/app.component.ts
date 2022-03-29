@@ -12,24 +12,27 @@ import { takeUntil, map } from 'rxjs/operators';
 export class AppComponent implements OnInit, OnDestroy {
   private unsubscribe$ = new Subject<void>();
 
-  // cities = ["London", "New York", "Moscow", "Karachi"];
-
   countries = [
+
+    {
+      name: 'Mexico',
+      cities: ['Guadalajara', 'Zapopan', 'Monterrey']
+    },
+    {
+      name: 'Canada',
+      cities: ['Toronto', 'Montreal', 'Ottawa']
+    },
     {
       name: 'United Kingdom',
       cities: ['London', 'Warwick', 'Birmingham']
-    },
-    {
-      name: 'United States',
-      cities: ['New York', 'Chicago', 'Washington']
     },
     {
       name: 'Australia',
       cities: ['Sydney', 'Adelaide', 'Melbourne']
     },
     {
-      name: 'Pakistan',
-      cities: ['Lahore', 'Karachi', 'Islamabad']
+      name: 'United States',
+      cities: ['New York', 'Chicago', 'Los Angeles']
     }
   ];
 
